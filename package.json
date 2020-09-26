@@ -4,7 +4,8 @@
   "description": "A simple Electron app with a Custom Titlebar",
   "main": "app.js",
   "scripts": {
-    "test": "npx electron ."
+    "test": "npx electron .",
+    "start": "npx electron ."
   },
   "keywords": [],
   "author": "DjDeveloper",
