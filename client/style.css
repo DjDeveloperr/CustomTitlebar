@@ -1,0 +1,89 @@
+:root {
+    /* Our global variables */
+
+    /* Titlebar Button colors */
+    --tb-close: #FF625B;
+    --tb-min: #FFC030;
+    --tb-max: #30C843;
+
+    /* Titlebar Background Color */
+    --tb-bg: #E3E3E3; /* #414141 if you want dark mode! */
+    /* App background color */
+    --background: #ffffff; /* #313131 if you want dark mode! */
+    /* Titlebar Height */
+    --tb-height: 28px;
+}
+
+body {
+    /* This font is way better than the default one... */
+    font-family: sans-serif;
+}
+
+#titlebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: var(--tb-height);
+    background-color: var(--tb-bg);
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+#icon {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: calc(var(--tb-height) - 8px);
+    width: calc(var(--tb-height) - 8px);
+}
+
+#title {
+    --padding: 5px;
+    font-size: calc(var(--tb-height) - calc(var(--padding) * 2));
+    position: absolute;
+    left: var(--tb-height);
+    top: var(--padding);
+}
+
+.tb-btn {
+    --padding: 6px;
+    height: calc(var(--tb-height) - calc(var(--padding) * 2));
+    width: calc(var(--tb-height) - calc(var(--padding) * 2));
+    position: absolute;
+    top: var(--padding);
+    margin-right: var(--padding);
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.tb-btn:hover {
+    filter: brightness(50%);
+}
+
+#tb-btn-close {
+    right: 0px;
+    background-color: var(--tb-close);
+}
+
+#tb-btn-max {
+    right: calc(var(--tb-height) + 1px);
+    background-color: var(--tb-max);
+}
+
+#tb-btn-min {
+    right: calc(calc(var(--tb-height) * 2) + 2px);
+    background-color: var(--tb-min);
+}
+
+#app {
+    position: fixed;
+    top: var(--tb-height);
+    left: 0px;
+    width: 100%;
+    height: calc(100% - var(--tb-height));
+    background-color: var(--background);
+    padding: 10px;
+    font-size: 22px;
+}

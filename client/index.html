@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Hello Electron</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body>
+    <div id="titlebar">
+        <img id="icon" src="./images/icon.png"/>
+        <span id="title">My Title</span>
+        <div id="titlebar-buttons">
+            <div id="tb-btn-close" onclick="closeWindow()" class="tb-btn"></div>
+            <div id="tb-btn-max" onclick="maximizeWindow()" class="tb-btn"></div>
+            <div id="tb-btn-min" onclick="minimizeWindow()" class="tb-btn"></div>
+        </div>
+    </div>
+    <div id="app">
+        This is an Electron app with a cool titlebar!
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

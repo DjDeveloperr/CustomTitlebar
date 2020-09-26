@@ -1,0 +1,15 @@
+{
+  "name": "customtitlebar",
+  "version": "1.0.0",
+  "description": "A simple Electron app with a Custom Titlebar",
+  "main": "app.js",
+  "scripts": {
+    "test": "npx electron ."
+  },
+  "keywords": [],
+  "author": "DjDeveloper",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.2"
+  }
+}
